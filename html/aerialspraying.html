@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US- PREDULIVE LABS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Universal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-round {
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+        }
+
+        .button-round:hover {
+            color: yellow;
+            border: 1px solid yellow;
+            transition: 0.4s;
+        }
+
+        .button-square {
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Navbar CSS -->
+    <style>
+        .navbar,
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav li:hover {
+            border-bottom: 5px solid yellow;
+            transition: 0.4s;
+        }
+
+        .brand {
+            background-color: white;
+        }
+
+        .justify-right {
+            justify-content: space-between;
+        }
+
+        .active {
+            border-bottom: 5px solid yellow;
+        }
+
+        .navbar-items {
+            margin-left: auto;
+            margin-right: 5rem;
+        }
+
+    </style>
+
+    <!-- RESEARCH CSS -->
+    <style>
+        .careers {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .careers-inner {
+            text-align: center;
+            margin-top: 10vh;
+            padding: 30px;
+            width: 80%;
+        }
+
+        .careers-inner p {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .in-article-img {
+            padding: 50px;
+            height: 50vh;
+            width: 70vw;
+        }
+
+        .visu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+
+    <!-- Image Header Section CSS-->
+    <style>
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-video {
+            object-fit: cover;
+            width: 96.9vw;
+            height: 60vh;
+        }
+    </style>
+
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            margin-top: 100px;
+            padding: 40px 0 0 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 5px solid yellow;
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .address {
+            font-weight: lighter;
+            color: rgb(152, 152, 152);
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgb(152, 152, 152);
+        }
+
+        .footer-links a:hover {
+            color: rgb(228, 228, 228);
+            border-bottom: 2px solid yellow;
+        }
+
+        .footer-card {
+            display: flex;
+            margin-left: 2%;
+            flex-direction: column;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img class="brand" src="https://www.predulivelabs.in/Images/LOGO.png" alt="" width="50" height="50"
+                    height="24" class="d-inline-block align-text-top">
+                <strong> PREDULIVE LABS </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/services">INDUSTRIAL SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainings">DRONE TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/repair">DRONE REPAIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RESEARCH & DEV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers">CAREERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="/mission">MISSION</a></li>
+                            <li><a class="dropdown-item" href="/contact">CONTACT US</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image-Section -->
+    <section class="video-section">
+        <img id="main-video"
+            src="https://images.pexels.com/photos/4530818/pexels-photo-4530818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" srcset="">
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section class="careers">
+        <div class="careers-inner">
+            <div class="normaltext">
+                <h5>
+                    AERIAL SPRAYING
+                </h5>
+                <p>
+                    DIGITAL AGRICULTURE HAS EMERGED AS ONE OF THE MOST PROMISING TECHNOLOGIES TO ENABLE SUSTAINABLE USE OF RESOURCES WHILE SATISFYING GLOBAL DEMANDS FOR QUANTITY AND QUALITY. DIGITAL TOOLS, SUCH AS UAVS, SENSORS AND ROBOTICS, ARE ALREADY USED BY FARMERS WITH BOTH LARGE- AND SMALL-SCALE OPERATIONS TO REDUCE INPUTS AND OPTIMIZE YIELDS. THIS WILL INCREASE FLEXIBILITY FOR THE FARMER WHEN DIGITAL SOLUTIONS ARE PART OF THE LABELS OF PLANT PROTECTION PRODUCTS. THIS DOCUMENT IS INTENDED TO SERVE AS GUIDANCE TO FARMERS AND SERVICE PROVIDERS ON BASIC REQUIREMENTS FOR USING UAVS AND CONSIDERING THEIR POSSIBLE BENEFITS TO AGRICULTURE, POTENTIAL RISKS, THE DEVELOPING REGULATORY LANDSCAPE, AND CHALLENGES TO ADOPTION. IT THEN GOES ON TO OUTLINE BEST MANAGEMENT PRACTICES (BMPS) WITH UAVS BEFORE USE, DURING MIXING AND LOADING, AS WELL AS DURING AND AFTER APPLICATION. THE CONTENT OF AN EMERGENCY PLAN IS CONSIDERED ALONG WITH THE OUTLOOK OF THE USE OF UAVs FOR SPRAYING PESTICIDES.
+                    <br><br>
+                </p>
+                <h5>
+                    POTENTIAL BENEFITS USING UAVS
+                </h5>
+                <div class="visu">
+                    <img class="in-article-img"
+                        src="https://cdn.techjuice.pk/wp-content/uploads/2020/07/gEToKhWMFvFtwIwsz2QIMA.jpg"
+                        alt="" srcset="">
+                    <p>
+                        THIS RAPIDLY GROWING AREA WILL CREATE NEW OPPORTUNITIES AND QUESTIONS AS IT EVOLVES BUT DOES OFFER SIGNIFICANT BENEFITS IN TERMS OF ECONOMICS AND OPERATOR EXPOSURE IN SMALLER AGRICULTURAL UNITS. THOUGH THERE ARE NO SIGNIFICANT DIFFERENCES IN THE CONSUMER SAFETY PROFILE OF PRODUCE GROWN WITHIN UAV APPLICATION, THERE ARE SIGNIFICANT REDUCTIONS IN OPERATOR EXPOSURE IN SMALL AGRICULTURAL UNITS WHICH TYPICALLY USE BACKPACK SPRAYING. UAV APPLICATION, IF WELL MANAGED, COULD BECOME A KEY ELEMENT OF INTEGRATED PEST MANAGEMENT (IPM).
+                        <br><br>
+                    </p>
+                </div>
+
+                <h4>
+                    SPRAYING WATER
+                </h4>
+                <p>
+                    WATER IS ONE OF THE MAIN INPUTS INTO A SPRAY OPERATION AND WATER IS ALSO CRITICAL TO THE PERFORMANCE OF PESTICIDES. THERE ARE FOUR MAIN WATER QUALITY INDICATORS RELATED TO PESTICIDE PERFORMANCE: • WATER HARDNESS IS CAUSED BY POSITIVELY CHARGED MINERALS, PRIMARILY CALCIUM AND MAGNESIUM, BUT ALSO SODIUM AND IRON. THESE CATIONS CAN BIND TO SOME HERBICIDES (GLYPHOSATE IS THE BEST-KNOWN EXAMPLE, ALSO 2,4-D AMINE), REDUCING ITS PERFORMANCE.
+                    <br><br>
+                    BICARBONATE CAN INHIBIT HERBICIDE ACTIVITY, AND ALSO MAKE SOME HERBICIDES MORE DIFFICULT TO MIX. THE MOST COMMONLY AFFECTED HERBICIDES ARE MEMBERS OF THE GROUP 1 MODES OF ACTION, PRODUCTS LIKE CLETHODIM, SETHOXYDIM, AS WELL AS MCPA AMINE AND 2,4-D AMINE. DEFINITE GUIDELINES ARE HARD TO FIND BECAUSE THE ANTAGONISTIC EFFECT OF THE BICARBONATE ION DEPENDS ON THE PRESENCE OF OTHER IONS SUCH AS SODIUM AND CALCIUM.
+                    <br><br>
+                    PH VALUES BETWEEN 4 AND 7 ARE CONSIDERED ACCEPTABLE. BUT SOME HERBICIDES, NOTABLY THOSE IN THE GROUP 2 MODES OF ACTION, HAVE SPECIFIC PH NEEDS TO DISSOLVE PROPERLY. FOR EXAMPLE, THE SULFONYLUREAS AND TRIAZOLOPYRIMIDINES) DISSOLVE BETTER AT HIGHER PH, WHEREAS THE IMIDAZOLINONES TEND TO REQUIRE LOWER PH. LABEL DIRECTIONS ARE IMPORTANT, SOMETIMES CALLING FOR SPECIFIC ADJUVANTS. SOME PESTICIDES, PARTICULARLY INSECTICIDES, CAN BREAK DOWN RAPIDLY IN HIGHER PH WATER.
+                    <br><br>
+                    CLEANLINESS/TURBIDITY. WATER MAY CONTAIN SUSPENDED SOLIDS SUCH AS CLAY. SOME CHEMICALS ARE SENSITIVE TO THIS, AS THEY ARE READILY ADSORBED TO SOIL PARTICLES, AND SO TURBID WATER CAN REDUCE THEIR EFFECTIVENESS
+                    <br><br>
+                    THERE ARE CONSIDERABLE TIME AND LABOR REQUIREMENT ADVANTAGES FOR UAVS OPERATING ABOVE SMALL RICE PADDIES COMPARED TO MANUAL BACKPACK SPRAYERS WALKING THROUGH THE WATER-LOGGED ENVIRONMENTS TO MAKE APPLICATIONS. COMPARISONS HAVE BEEN MADE OF SPRAY APPLICATION RATES AND RESULTING DEPOSITION RATES BETWEEN UAVS, MANNED AERIAL SPRAYING, AND GROUND SPRAYING IN CALIFORNIA GRAPE PRODUCTION. DEPOSITION RATES FROM UAVS WERE SIMILAR TO MANNED AERIAL SPRAYS BUT THE AREAS COVERED PER UNIT/TIME WERE IN EXCESS OF THOSE TYPICALLY ACHIEVED WITH A GROUND-BASED VEHICLE SPRAYING. IT WAS CONCLUDED THAT UAV SPRAYING COULD PROVIDE A PERFORMANCE THAT INCLUDES BENEFICIAL ASPECTS OF BOTH SYSTEMS.VI UAVS ARE ALSO ABLE TO ACCESS STEEPLY SLOPING CULTIVATED AREAS IN SOME VINEYARDS THAT ARE HARD TO ACCESS WITH GROUND-BASED SPRAYERS. THEY WERE ALSO NOTED TO REDUCE THE TIME REQUIRED TO RETURN TO THE MIXING AND LOADING SITE AND TO CONTINUE SPRAYING.
+                    
+                </p>
+            </div>
+            <button class="btn btn-danger" onclick="window.location.href='/contact'">Get in Touch</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <!-- Footer Address Section -->
+            <div class="footer-address footer-card">
+                <h6> ADDRESS </h6>
+                <ul class="footer-links">
+                    <strong>
+                        <h6> Predulive Labs Pvt. Ltd. </h6>
+                    </strong>
+                    <li class="address"> Address Line 1 </li>
+                    <li class="address"> Address Line 2 </li>
+                    <li class="address"> State </li>
+                    <li class="address"> Pin </li>
+                </ul>
+            </div>
+            <!-- Drone Industries -->
+            <div class="footer-industries footer-card">
+                <h6>INDUSTRIES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> GEOGRAPHIC INFORMATION SYSTEM </a></li>
+                    <li> <a href="#"> RAILWAYS </a></li>
+                    <li> <a href="#"> TELECOM </a></li>
+                    <li> <a href="#"> AGRICULTURE </a></li>
+                    <li> <a href="#"> FORESTRY AND WILDLIFE </a></li>
+                    <li> <a href="#"> CONSTRUCTION </a></li>
+                    <li> <a href="#"> VIRTUAL REALITY </a></li>
+                    <li> <a href="#"> FILMING </a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="footer-services footer-card">
+                <h6> SERVICES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> DRONES & ROBOTICS </a></li>
+                    <li> <a href="#"> INSPECTION AND MONITORING OF PIPELINES </a></li>
+                    <li> <a href="#"> ROAD INSPECTION </a></li>
+                    <li> <a href="#"> DISASTER MANAGEMENT </a></li>
+                    <li> <a href="#"> AGRICULTURE SERVICES </a></li>
+                    <li> <a href="#"> RAILWAY SERVICES </a></li>
+                </ul>
+            </div>
+            <!-- compnay -->
+            <div class="footer-company footer-card">
+                <h6> COMPANY </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> ABOUT US </a></li>
+                    <li> <a href="#"> OUR MISSION </a></li>
+                    <li> <a href="#"> RESERACH AND DEVELOPENT </a></li>
+                    <li> <a href="#"> BLOG </a></li>
+                    <li> <a href="#"> CONTACT US </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h6>&copy; 2020 Predulive Labs Pvt. Ltd.</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

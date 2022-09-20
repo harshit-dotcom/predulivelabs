@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US- PREDULIVE LABS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Universal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-round {
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+        }
+
+        .button-round:hover {
+            color: yellow;
+            border: 1px solid yellow;
+            transition: 0.4s;
+        }
+
+        .button-square {
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Navbar CSS -->
+    <style>
+        .navbar,
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav li:hover {
+            border-bottom: 5px solid yellow;
+            transition: 0.4s;
+        }
+
+        .brand {
+            background-color: white;
+        }
+
+        .justify-right {
+            justify-content: space-between;
+        }
+
+        .active {
+            border-bottom: 5px solid yellow;
+        }
+
+        .navbar-items {
+            margin-left: auto;
+            margin-right: 5rem;
+        }
+
+    </style>
+
+    <!-- RESEARCH CSS -->
+    <style>
+        .careers {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .careers-inner {
+            text-align: center;
+            margin-top: 10vh;
+            padding: 30px;
+            width: 80%;
+        }
+
+        .careers-inner p {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .in-article-img {
+            padding: 20px;
+            height: 40vh;
+            width: 50vw;
+        }
+
+        .visu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .visu-row {
+            flex-direction: row !important;
+            align-items: center;
+        }
+
+        .visu-card{
+            padding: 2px 1px;
+            background-color: rgba(255, 255, 0, 0.466);
+            margin: 2px 0;
+            border-radius: 20px; 
+        }
+    </style>
+
+
+    <!-- Image Header Section CSS-->
+    <style>
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-video {
+            object-fit: cover;
+            width: 96.9vw;
+            height: 60vh;
+        }
+    </style>
+
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            margin-top: 100px;
+            padding: 40px 0 0 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 5px solid yellow;
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .address {
+            font-weight: lighter;
+            color: rgb(152, 152, 152);
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgb(152, 152, 152);
+        }
+
+        .footer-links a:hover {
+            color: rgb(228, 228, 228);
+            border-bottom: 2px solid yellow;
+        }
+
+        .footer-card {
+            display: flex;
+            margin-left: 2%;
+            flex-direction: column;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img class="brand" src="https://www.predulivelabs.in/Images/LOGO.png" alt="" width="50" height="50"
+                    height="24" class="d-inline-block align-text-top">
+                <strong> PREDULIVE LABS </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">INDUSTRIAL SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainings">DRONE TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/repair">DRONE REPAIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/research">RESEARCH & DEV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers">CAREERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="/mission">MISSION</a></li>
+                            <li><a class="dropdown-item" href="/contact">CONTACT US</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image-Section -->
+    <section class="video-section">
+        <img id="main-video"
+            src="https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" srcset="">
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section class="careers">
+        <div class="careers-inner">
+            <div class="normaltext">
+                <h4>
+                    Drone & Unmanned Aerial Vehicle (UAV)
+                </h4>
+
+                <br>
+                <h5 style="text-align: left">
+                    &bullet; Introduction
+                </h5>
+                <div class="visu visu-row">
+                    <img class="in-article-img"
+                        src=
+                        "https://www.asianmilitaryreview.com/wp-content/uploads/Australia-UAV-1-696x465.jpg"
+
+                        alt="" srcset="">
+                     <div class="card">    
+                        <p>
+                            UAV is an unmanned aerial vehicle (UAV). They can be controlled autonomously or by a remote pilot. It is controlled either autonomously by on-board computers or by remote control of a pilot on the ground. That is used for intelligence, surveillance, target acquisition, and reconnaissance and carries aircraft ordnance such as missiles. These drones are usually under real-time human control, with varying levels of autonomy. Unlike unmanned surveillance and reconnaissance aerial vehicles, UAVs are used for both drone strikes and battlefield intelligence.
+                            Microcontroller based drone control system has also been developed where a RF transmitter and receiver operating in the frequency of 2.4 GHz are used for remote operation for the Drone. The developed drone in this work can be used for a number of applications, such as policing, firefighting, monitoring flood affected areas, recording video footage from impassable areas and both military and non-military security work. In addition, using an Android mobile device incorporation with GPS has been used for live position tracking of Drone and real time audio-visual feedback from Drone.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <h5 style="text-align: left">
+                    &bullet; Types of Drones
+                </h5>
+                <div class="visu visu-row">
+                    <img class="in-article-img"
+                        src=
+                        "https://predulivelabs.in/Images/multi%20rotor.png"
+
+                        alt="" srcset="">
+                     <div class="visu-card"> 
+                        <h5>
+                            Multi Rotor
+                        </h5>    
+                        <p>
+                            A multi-Rotor is a mechanically simple aerial vehicle whose motion is controlled by speeding or slowing multiple downward thrusting motor/propeller units. If you want to get a small camera in the air for a short period of time then it is hard to argue with a multi-rotor.
+                            They are the easiest and cheapest option for getting an ‘eye in the sky’, and because they give you such great control over position and framing they are perfect for aerial photography work.
+                        </p>
+                    </div>
+                </div>
+                <div class="visu visu-row">
+                     <div class="visu-card"> 
+                        <h5>
+                            Fixed-Wing
+                        </h5>    
+                        <p>
+                            Fixed wing drone is an aircraft that operates without a human pilot onboard. Fixed wing UAVs are controlled either remotely by a human operator or autonomously via onboard computers. Fixed-wing drones use a wing like a normal aeroplane to provide the lift rather than vertical lift rotors.
+                            For this reason, they are able to cover longer distances, map much larger areas, and loiter for long times monitoring their point of interest. In addition to the greater efficiency, it is also possible to use gas engines as their power source, and with the greater energy density of fuel, many fixed-wing UAVs can stay aloft for 16 hours or more.
+                        </p>
+                    </div>
+                        <img class="in-article-img"
+                        src=
+                        "https://predulivelabs.in/Images/Fixed-wing.png"
+                        alt="" srcset="">
+                </div>
+                <div class="visu visu-row">
+                    <img class="in-article-img"
+                        src=
+                        "https://predulivelabs.in/Images/Single-rotor%20helicopter.gif"
+
+                        alt="" srcset="">
+                     <div class="visu-card"> 
+                        <h5>
+                            Single-Rotor Helicopter
+                        </h5>    
+                        <p>
+                            A single-rotor helicopter or other airborne tech project offers greater efficiency than a multi-rotor. While a multi-rotor has many different rotors to hold it up, a single rotor has just one, plus a tail rotor to control its heading. Helicopters are very popular in manned aviation, but currently only fill a small niche in the drone world.
+                        </p>
+                    </div>
+                </div>
+                <div class="visu visu-row">
+                    <div class="visu-card"> 
+                       <h5>
+                        Fixed-Wing Hybrid VTOL
+                       </h5>    
+                       <p>
+                        Hybrid VTOL Fixed-Wing UAVs combine the benefits of multi-rotor platforms with fixed-wing drones and transition between the two modes during flight. The ability to vertically take-off and land, without the need for a launcher or runway, means these drones can be operated in almost any location.
+                       </p>
+                   </div>
+                       <img class="in-article-img"
+                       src=
+                       "https://predulivelabs.in/Images/Fixed-wing%20hybrid%20VTOL.jpg"
+                       alt="" srcset="">
+               </div>
+
+                <br>
+                <h5 style="text-align: left">
+                    &bullet; APPLICATIONS OF DRONES
+                </h5>
+                <div class="visu">
+                    <div class="visu-card"> •	Aerial Photography</div>
+                    <div class="visu-card"> •	Shipping and Delivery</div>
+                    <div class="visu-card"> •	Geographic Mapping </div>
+                    <div class="visu-card"> •	Disaster Management </div>
+                    <div class="visu-card"> •	Precision Agriculture </div>
+                    <div class="visu-card"> •	Search and Rescue </div>
+                    <div class="visu-card"> •	Weather Forecast </div>
+                    <div class="visu-card"> •	Wildlife Monitoring </div>
+                    <div class="visu-card"> •	Law Enforcement </div>
+                    <div class="visu-card"> •	Entertainment </div>
+                </div>
+            </div>
+                <br><br>
+
+            <h5 style="text-align: left">
+                &bullet; CONCLUSION
+            </h5>
+            <p>
+                Unmanned Aerial Vehicles are an exciting field in the world of aviation, with new discoveries. Over the next 16 year, UAVs will become a significant component of military, civil, and perhaps even commercial aviation.
+                However, the very dynamic nature of the field also creates a significant amount of uncertainty. The wide range of UAV physical and performance characteristics, many of which will be very unlike any current aircraft, will place additional challenges on an air traffic management system.
+            </p>
+        </div>
+        <button class="btn btn-warning" onclick="window.location='/research'"> < previous page </button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <!-- Footer Address Section -->
+            <div class="footer-address footer-card">
+                <h6> ADDRESS </h6>
+                <ul class="footer-links">
+                    <strong>
+                        <h6> Predulive Labs Pvt. Ltd. </h6>
+                    </strong>
+                    <li class="address"> Address Line 1 </li>
+                    <li class="address"> Address Line 2 </li>
+                    <li class="address"> State </li>
+                    <li class="address"> Pin </li>
+                </ul>
+            </div>
+            <!-- Drone Industries -->
+            <div class="footer-industries footer-card">
+                <h6>INDUSTRIES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> GEOGRAPHIC INFORMATION SYSTEM </a></li>
+                    <li> <a href="#"> RAILWAYS </a></li>
+                    <li> <a href="#"> TELECOM </a></li>
+                    <li> <a href="#"> AGRICULTURE </a></li>
+                    <li> <a href="#"> FORESTRY AND WILDLIFE </a></li>
+                    <li> <a href="#"> CONSTRUCTION </a></li>
+                    <li> <a href="#"> VIRTUAL REALITY </a></li>
+                    <li> <a href="#"> FILMING </a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="footer-services footer-card">
+                <h6> SERVICES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> DRONES & ROBOTICS </a></li>
+                    <li> <a href="#"> INSPECTION AND MONITORING OF PIPELINES </a></li>
+                    <li> <a href="#"> ROAD INSPECTION </a></li>
+                    <li> <a href="#"> DISASTER MANAGEMENT </a></li>
+                    <li> <a href="#"> AGRICULTURE SERVICES </a></li>
+                    <li> <a href="#"> RAILWAY SERVICES </a></li>
+                </ul>
+            </div>
+            <!-- compnay -->
+            <div class="footer-company footer-card">
+                <h6> COMPANY </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> ABOUT US </a></li>
+                    <li> <a href="#"> OUR MISSION </a></li>
+                    <li> <a href="#"> RESERACH AND DEVELOPENT </a></li>
+                    <li> <a href="#"> BLOG </a></li>
+                    <li> <a href="#"> CONTACT US </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h6>&copy; 2020 Predulive Labs Pvt. Ltd.</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

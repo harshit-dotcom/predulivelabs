@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US- PREDULIVE LABS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Universal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-round {
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+        }
+
+        .button-round:hover {
+            color: yellow;
+            border: 1px solid yellow;
+            transition: 0.4s;
+        }
+
+        .button-square {
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Navbar CSS -->
+    <style>
+        .navbar,
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav li:hover {
+            border-bottom: 5px solid yellow;
+            transition: 0.4s;
+        }
+
+        .brand {
+            background-color: white;
+        }
+
+        .justify-right {
+            justify-content: space-between;
+        }
+
+        .active {
+            border-bottom: 5px solid yellow;
+        }
+
+        .navbar-items {
+            margin-left: auto;
+            margin-right: 5rem;
+        }
+
+    </style>
+
+    <!-- RESEARCH CSS -->
+    <style>
+        .careers {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .careers-inner {
+            text-align: center;
+            margin-top: 10vh;
+            padding: 30px;
+            width: 80%;
+        }
+
+        .careers-inner p {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .in-article-img {
+            padding: 50px;
+            height: 50vh;
+            width: 70vw;
+        }
+
+        .visu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+
+    <!-- Image Header Section CSS-->
+    <style>
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-video {
+            object-fit: cover;
+            width: 96.9vw;
+            height: 60vh;
+        }
+    </style>
+
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            margin-top: 100px;
+            padding: 40px 0 0 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 5px solid yellow;
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .address {
+            font-weight: lighter;
+            color: rgb(152, 152, 152);
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgb(152, 152, 152);
+        }
+
+        .footer-links a:hover {
+            color: rgb(228, 228, 228);
+            border-bottom: 2px solid yellow;
+        }
+
+        .footer-card {
+            display: flex;
+            margin-left: 2%;
+            flex-direction: column;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img class="brand" src="https://www.predulivelabs.in/Images/LOGO.png" alt="" width="50" height="50"
+                    height="24" class="d-inline-block align-text-top">
+                <strong> PREDULIVE LABS </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/services">INDUSTRIAL SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainings">DRONE TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/repair">DRONE REPAIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RESEARCH & DEV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers">CAREERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="/mission">MISSION</a></li>
+                            <li><a class="dropdown-item" href="/contact">CONTACT US</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image-Section -->
+    <section class="video-section">
+        <img id="main-video"
+            src="https://images.pexels.com/photos/4530818/pexels-photo-4530818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" srcset="">
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section class="careers">
+        <div class="careers-inner">
+            <div class="normaltext">
+                <h5>
+                    AERIAL SEEDING
+                </h5>
+                <p>
+                    DRONE SEEDING IS AN EXTREMELY COST-EFFECTIVE SOLUTION FOR AERIAL SEEDING, THE MANOEUVRABILITY OF THE UAV (UNMANNED AERIAL VEHICLE) ALLOWS OUR PILOT TO SERVICE ISOLATED OR DIFFICULT ACCESS AREAS AND SITES WHICH REQUIRE REHABILITATION AND/OR STABILISATION. COMBINED WITH AERIAL SURVEY, OUR DRONES CAN BE UTILISED TO SERVICE BROADACRE OR SPECIFIC AREA WHERE TREATMENT IS NECESSARY. <br> </strong> OUR UAV EQUIPPED GENERATES HIGH-SPEED, FOCUSED AIRFLOW AT UP TO 18M/S. </strong>
+                    <br><br>
+                </p>
+                <h5>
+                    BENEFITS
+                </h5>
+                <div class="visu">
+                    <img class="in-article-img"
+                        src="https://bloximages.newyork1.vip.townnews.com/lancasterfarming.com/content/tncms/assets/v3/editorial/c/c8/cc8e790a-3bd1-5dd2-9fd6-b7de71de9310/5734e481e1989.image.jpg?resize=1200%2C818"
+                        alt="" srcset="">
+                    <p>
+                        THROUGH PROJECTING STREAMS OF POWERFUL, STABLE AND HIGH-SPEED AIR WITH CENTIMETRE-LEVEL FLIGHT ACCURACY, BRINGS EVERY GRANULE TO THE PLACE IT IS SUPPOSED TO BE. THE EMBEDDED ROLLING FEEDER GUARANTEES A UNIFORM OUTPUT NEEDED. FARMERS WILL NO LONGER FACE THE PROBLEMS OF UNEVEN SEEDING OR OVERDOSE.
+                        <br><br>
+                        WHEN USING MAPPING DRONES, WITH THE HELP OF ANALYSIS SOFTWARE, YOU CAN DETERMINE THE SOIL CONDITION, ANALYZE ITS TEXTURE AND MOISTURE CONTENT. FURTHERMORE, THE INFORMATION YOU RECEIVE FROM THE DRONE ALLOWS YOU TO PLAN THE LAYOUT OF THE FIELD AND OPTIMIZE SEEDING AND PLANTING RATES VIA YOUR APPLICATION DRONE. AS A RESULT, YOU REAP A COMPLETE AND UNIFORM HARVEST.
+                        <br><br>
+                    </p>
+                </div>
+
+                <h4>
+                    POST SEEDING BENEFITS
+                </h4>
+                <p>
+                    SOWING THE SEEDS IS ONLY THE FIRST STEP. SECONDLY, YOU NEED TO THINK OF CROP MANAGEMENT WHICH IS AN ESSENTIAL ASPECT OF THE INDUSTRY. THAT IS TO SAY, DRONES MAKE IT POSSIBLE TO VIEW CROPS THROUGH EVERY STAGE OF THEIR DEVELOPMENT. INSTEAD OF TAKING OUT THE TRACTOR OR WALKING THROUGH THE FIELDS, IT TAKES A MATTER OF MINUTES TO GET YOUR DRONE IN THE AIR. THIS WILL PROVIDE YOU WITH A DETAILED REPORT, WITH CLEAR IMAGES FOR YOU TO DETERMINE WHAT THE CROP REQUIRES TO CONTINUE GROWING EFFECTIVELY. SOME SENSORS HELP ESTABLISH CHLOROPHYLL LEVELS, THE PRESENCE OF PESTS, MOISTURE, AND PLANT STRESS LEVELS.
+                    <br><br>
+                    AFTER YOU’VE USED YOUR DRONE AND DISTRIBUTED YOUR SEEDS AS YOU REQUIRE, YOU CAN USE THE PAYLOAD CARRIER TO TEND TO THE SEEDS YOU PLANTED. FOR EXAMPLE, THE SPREADER ON THE DRONE CAN EFFECTIVELY SPREAD GRANULAR FERTILIZERS AND PESTICIDES.
+                </p>
+            </div>
+            <button class="btn btn-danger" onclick="window.location.href='/contact'">Get in Touch</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <!-- Footer Address Section -->
+            <div class="footer-address footer-card">
+                <h6> ADDRESS </h6>
+                <ul class="footer-links">
+                    <strong>
+                        <h6> Predulive Labs Pvt. Ltd. </h6>
+                    </strong>
+                    <li class="address"> Address Line 1 </li>
+                    <li class="address"> Address Line 2 </li>
+                    <li class="address"> State </li>
+                    <li class="address"> Pin </li>
+                </ul>
+            </div>
+            <!-- Drone Industries -->
+            <div class="footer-industries footer-card">
+                <h6>INDUSTRIES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> GEOGRAPHIC INFORMATION SYSTEM </a></li>
+                    <li> <a href="#"> RAILWAYS </a></li>
+                    <li> <a href="#"> TELECOM </a></li>
+                    <li> <a href="#"> AGRICULTURE </a></li>
+                    <li> <a href="#"> FORESTRY AND WILDLIFE </a></li>
+                    <li> <a href="#"> CONSTRUCTION </a></li>
+                    <li> <a href="#"> VIRTUAL REALITY </a></li>
+                    <li> <a href="#"> FILMING </a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="footer-services footer-card">
+                <h6> SERVICES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> DRONES & ROBOTICS </a></li>
+                    <li> <a href="#"> INSPECTION AND MONITORING OF PIPELINES </a></li>
+                    <li> <a href="#"> ROAD INSPECTION </a></li>
+                    <li> <a href="#"> DISASTER MANAGEMENT </a></li>
+                    <li> <a href="#"> AGRICULTURE SERVICES </a></li>
+                    <li> <a href="#"> RAILWAY SERVICES </a></li>
+                </ul>
+            </div>
+            <!-- compnay -->
+            <div class="footer-company footer-card">
+                <h6> COMPANY </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> ABOUT US </a></li>
+                    <li> <a href="#"> OUR MISSION </a></li>
+                    <li> <a href="#"> RESERACH AND DEVELOPENT </a></li>
+                    <li> <a href="#"> BLOG </a></li>
+                    <li> <a href="#"> CONTACT US </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h6>&copy; 2020 Predulive Labs Pvt. Ltd.</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

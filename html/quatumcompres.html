@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US- PREDULIVE LABS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Universal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-round {
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+        }
+
+        .button-round:hover {
+            color: yellow;
+            border: 1px solid yellow;
+            transition: 0.4s;
+        }
+
+        .button-square {
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Navbar CSS -->
+    <style>
+        .navbar,
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav li:hover {
+            border-bottom: 5px solid yellow;
+            transition: 0.4s;
+        }
+
+        .brand {
+            background-color: white;
+        }
+
+        .justify-right {
+            justify-content: space-between;
+        }
+
+        .active {
+            border-bottom: 5px solid yellow;
+        }
+
+        .navbar-items {
+            margin-left: auto;
+            margin-right: 5rem;
+        }
+    </style>
+
+    <!-- RESEARCH CSS -->
+    <style>
+        .careers {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .careers-inner {
+            text-align: center;
+            margin-top: 10vh;
+            padding: 30px;
+            width: 80%;
+        }
+
+        .careers-inner p {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .in-article-img {
+            padding: 20px;
+            height: 40vh;
+            width: 50vw;
+        }
+
+        .visu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .visu-row {
+            flex-direction: row !important;
+            align-items: center;
+        }
+
+        .visu-card {
+            padding: 2px 1px;
+            background-color: rgba(255, 255, 0, 0.466);
+            margin: 2px 0;
+            border-radius: 20px;
+        }
+    </style>
+
+
+    <!-- Image Header Section CSS-->
+    <style>
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-video {
+            object-fit: cover;
+            width: 96.9vw;
+            height: 60vh;
+        }
+    </style>
+
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            margin-top: 100px;
+            padding: 40px 0 0 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 5px solid yellow;
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .address {
+            font-weight: lighter;
+            color: rgb(152, 152, 152);
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgb(152, 152, 152);
+        }
+
+        .footer-links a:hover {
+            color: rgb(228, 228, 228);
+            border-bottom: 2px solid yellow;
+        }
+
+        .footer-card {
+            display: flex;
+            margin-left: 2%;
+            flex-direction: column;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img class="brand" src="https://www.predulivelabs.in/Images/LOGO.png" alt="" width="50" height="50"
+                    height="24" class="d-inline-block align-text-top">
+                <strong> PREDULIVE LABS </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">INDUSTRIAL SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainings">DRONE TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/repair">DRONE REPAIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/research">RESEARCH & DEV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers">CAREERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="/mission">MISSION</a></li>
+                            <li><a class="dropdown-item" href="/contact">CONTACT US</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image-Section -->
+    <section class="video-section">
+        <img id="main-video"
+            src="https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" srcset="">
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section class="careers">
+        <div class="careers-inner">
+            <div class="normaltext">
+                <h4>
+                    Quantum Computing
+                </h4>
+
+                <br>
+                <h5 style="text-align: left">
+                    &bullet; Introduction
+                </h5>
+                <div class="visu visu-row">
+                    <img class="in-article-img"
+                        src="https://bleuwire.com/wp-content/uploads/2018/12/Quantum-Computing-business.jpg" alt=""
+                        srcset="">
+                    <div class="card">
+                        <p>
+                            Quantum Computing is the process of using quantum-mechanics for solving complex and massive
+                            operations quickly and efficiently. As classical computers are used for performing classical
+                            computations, similarly, a Quantum computer is used for performing Quantum computations.
+                            Quantum computing is an area of computing focused on developing computer technology based on
+                            the principles of quantum theory, which explains the behaviour of energy and material on the
+                            atomic and subatomic levels.
+                            Classical computers that we use today can only encode information in bits that take the
+                            value of 1 or 0.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <h5 style="text-align: left">
+                    &bullet; APPLICATIONS
+                </h5>
+                <div class="visu">
+                    <div class="visu-card">
+                        <h5> Cybersecurity </h5>
+                        Personal information is stored in computers in the current era of digitization. So, we need a
+                        very strong system of cybersecurity to protect data from stealing. Classical computers are good
+                        enough for cybersecurity, but the vulnerable threats and attacks weaken it.
+                        Scientists are working with quantum computers in this field. It is also found that it is
+                        possible to develop several techniques to deal with such cybersecurity threats via machine
+                        learning.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Cryptography </h5>
+                        It is also a field of security where quantum computers are helping to develop encryption methods
+                        to deliver the packets onto the network safely. Such creation of encryption methods is known as
+                        Quantum Cryptography.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Weather Forecasting </h5>
+                        Sometimes, the process of analyzing becomes too long to forecast the weather using classical
+                        computers. On the other hand, Quantum Computers have enhanced power to analyze, recognize the
+                        patterns, and forecast the weather in a short period and with better accuracy.
+                        Even quantum systems are able to predict more detailed climate models with perfect timings.
+                    </div>
+                    <div class="visu-card">
+                        <h5> AI and Machine Learning </h5>
+                        AI has become an emerging area of digitization. Many tools, apps, and features have been
+                        developed via AI and ML. As the days passing by, numerous applications are being developed.
+                        As a result, it has challenged the classical systems to match up accuracy and speed. But,
+                        Quantum computers can help to process such complex problems in less time for which a classical
+                        computer will take hundreds of years to solve those problems.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Drug Design and Development </h5>
+                        Drug designing and development is a typical job to be done. It is because the development of
+                        drugs is based on trial and error methods, which is expensive as well as risky tasks.
+                        It is also a challenging task for quantum computers too. It is the researcher's hope and belief
+                        that quantum computing can become an effective way of knowing the drugs and their reactions over
+                        human beings.
+                        The day when quantum computing will successfully become capable of drug development, it will
+                        save a lot of time and money for drug industries. Also, more drug discoveries could be made with
+                        better results for the pharmaceutical industries.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Finance Marketing </h5>
+                        A finance industry can survive in the market only if it provides fruitful results to its
+                        customers. Such industries need unique and effective strategies to get growth.
+                        Although in conventional computers, the technique of Monte Carlo simulations is being used, in
+                        turn, it consumes a lot of time on the computer.
+                        However, if such complex calculations are performed by a quantum system, it will improve the
+                        quality of solutions and decrease development time.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Computational Chemistry </h5>
+                        The superposition and entanglement properties of a quantum computer may provide superpowers to
+                        machines for successfully mapping the molecules. As a result, it opens several opportunities in
+                        the field of pharmaceutical research.
+                        More massive problems that a quantum computer can handle include creating room-temperature
+                        superconductors, creating ammonia-based fertilizer, creating solid-state batteries, and removing
+                        CO2 (carbon dioxide) for a better climate, etc. Quantum computing will be the most prominent in
+                        the field of computational chemistry.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Logistics Optimization </h5>
+                        Conventional Computing is being used for improving data analysis and robust modeling by enabling
+                        various industries to optimize their logistics and scheduling workflows associated with their
+                        supply-chain management.
+                        Such operating models continuously perform the calculations and recalculations for finding the
+                        optimal routes of fleet operations, air traffic control, and traffic management. Some of these
+                        operations can become complex and difficult for classical computers to solve.Thus, quantum
+                        computing can become an ideal computing solution to solve such complex problems.
+                        In quantum computing, two approaches are used, which are:
+                    </div>
+                    <div class="visu-card">
+                        <h5> Quantum Annealing </h5>
+                        It is an advanced optimization technique that can surpass the classical computers.
+                    </div>
+                    <div class="visu-card">
+                        <h5> Universal Quantum Computers </h5>
+                        It is capable of finding solutions for all types of computational problems. But, such a type of
+                        quantum system will take time to be commercially available. Researchers are hopefully working to
+                        enhance the system.
+                    </div>
+
+
+                    <br>
+                    <h5 style="text-align: left">
+                        &bullet; ADVANTAGES
+                    </h5>
+                    <div class="visu">
+                        <div class="visu-card">
+                            <h5> Faster computations </h5>
+                            These types of computers can perform computation at a much faster rate than normal computers. Quantum computers have computation power higher than supercomputers also.
+                            They can process data 1000 times faster than normal computers and supercomputers. Some calculations if performed by a normal computer can take 1000 years are done by quantum computers in a few seconds.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Best for simulation </h5>
+                            Quantum computers are best for doing data simulation computing. There are many algorithms created that can simulate various things like weather forecasting, chemical simulation etc.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Medicine creation </h5>
+                            These types of computers can work better in the medical field. They can detect diseases and can create a formula for medicines. Different types of diseases can be diagnosed and tested in scientific laboratories using these computers.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Google search </h5>
+                            Quantum computers are used by Google to refine searches. Now every search on Google can speed up by using these computers. Most relevant results can be populated using quantum computing.
+                        </div>
+                        <div class="visu-card">
+                            <h5> High privacy </h5>
+                            These computers can make high encryption and are good at cryptography. It is impossible to break the security of quantum computers. Recently China has launched a satellite that uses quantum computing and China claimed that this satellite cannot be hacked.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Used in radar making </h5>
+                            Quantum computing is also used in making radar missiles. The accuracy of radar weapons can be improved by using this technology.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Used in artificial intelligence </h5>
+                            These types of computers perform well in artificial intelligence. They can make decisions more precisely than normal computers. Scientists can do better research using these computers.
+                        </div>
+                        <div class="visu-card">
+                            <h5> Machine learning </h5>
+                            Quantum computing is applied nicely by using machine learning techniques. Users can use less code and use machine learning processes for improving outcomes.
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+                <h5 style="text-align: left">
+                    &bullet; CONCLUSION
+                </h5>
+                <p>
+                    The field of quantum computing is growing rapidly as many of today's leading computing groups,
+                    universities, colleges, and all the leading IT vendors are researching the topic. This pace is
+                    expected to increase as more research is turned into practical applications. Although practical
+                    machines lie years in the future, this formerly fanciful idea is gaining plausibility.
+                    Quantum computers have the potential to revolutionize computation by making certain types of
+                    classically intractable problems solvable. While no quantum computer is yet sophisticated enough to
+                    carry out calculations that a classical computer can't, great progress is underway.
+                </p>
+            </div>
+            <button class="btn btn-warning" onclick="window.location='/research'">
+                < previous page </button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <!-- Footer Address Section -->
+            <div class="footer-address footer-card">
+                <h6> ADDRESS </h6>
+                <ul class="footer-links">
+                    <strong>
+                        <h6> Predulive Labs Pvt. Ltd. </h6>
+                    </strong>
+                    <li class="address"> Address Line 1 </li>
+                    <li class="address"> Address Line 2 </li>
+                    <li class="address"> State </li>
+                    <li class="address"> Pin </li>
+                </ul>
+            </div>
+            <!-- Drone Industries -->
+            <div class="footer-industries footer-card">
+                <h6>INDUSTRIES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> GEOGRAPHIC INFORMATION SYSTEM </a></li>
+                    <li> <a href="#"> RAILWAYS </a></li>
+                    <li> <a href="#"> TELECOM </a></li>
+                    <li> <a href="#"> AGRICULTURE </a></li>
+                    <li> <a href="#"> FORESTRY AND WILDLIFE </a></li>
+                    <li> <a href="#"> CONSTRUCTION </a></li>
+                    <li> <a href="#"> VIRTUAL REALITY </a></li>
+                    <li> <a href="#"> FILMING </a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="footer-services footer-card">
+                <h6> SERVICES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> DRONES & ROBOTICS </a></li>
+                    <li> <a href="#"> INSPECTION AND MONITORING OF PIPELINES </a></li>
+                    <li> <a href="#"> ROAD INSPECTION </a></li>
+                    <li> <a href="#"> DISASTER MANAGEMENT </a></li>
+                    <li> <a href="#"> AGRICULTURE SERVICES </a></li>
+                    <li> <a href="#"> RAILWAY SERVICES </a></li>
+                </ul>
+            </div>
+            <!-- compnay -->
+            <div class="footer-company footer-card">
+                <h6> COMPANY </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> ABOUT US </a></li>
+                    <li> <a href="#"> OUR MISSION </a></li>
+                    <li> <a href="#"> RESERACH AND DEVELOPENT </a></li>
+                    <li> <a href="#"> BLOG </a></li>
+                    <li> <a href="#"> CONTACT US </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h6>&copy; 2020 Predulive Labs Pvt. Ltd.</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4230/4230626.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/html/styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Universal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-round {
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid white;
+        }
+
+        .button-round:hover {
+            color: yellow;
+            border: 1px solid yellow;
+            transition: 0.4s;
+        }
+
+        .button-square {
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Navbar CSS -->
+    <style>
+        .navbar,
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        nav li:hover {
+            border-bottom: 5px solid yellow;
+            transition: 0.4s;
+        }
+
+        .brand {
+            background-color: white;
+        }
+
+        .justify-right {
+            justify-content: space-between;
+        }
+
+        .active {
+            border-bottom: 5px solid yellow;
+        }
+
+        .navbar-items {
+            margin-left: auto;
+            margin-right: 5rem;
+
+        }
+    </style>
+
+    <!-- Video Header Section CSS-->
+    <style>
+        .video-section {
+            padding: 14% 0 5% 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-video {
+            object-fit: cover;
+            width: 100vw;
+            height: 60vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .video-section h1 {
+            margin-top: 15vh;
+            font-size: 2rem;
+            letter-spacing: 5px;
+            color: white;
+            font-family: Trebuchet MS;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .video-section p {
+            color: white;
+        }
+    </style>
+
+    <!-- Services Section CSS -->
+    <style>
+        .services {
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-card {
+            margin: 30px 30px;
+        }
+
+        .services-outer {
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            flex-direction: column;
+            padding: 3%;
+            text-align: center;
+        }
+
+        .service-card {
+            height: 30vh;
+            width: 15vw;
+            color: white;
+            font-weight: bolder;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            opacity: 0.8;
+            flex-wrap: wrap;
+        }
+
+        .service-card:hover {
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+            background-origin: unset;
+        }
+
+        .card:hover {
+            margin: 10px;
+            opacity: 0.8;
+            transition: 0.4s;
+        }
+
+        .agri {
+            background: url('https://images.pexels.com/photos/929385/pexels-photo-929385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+        }
+
+        .rail {
+            background: url('https://images.pexels.com/photos/5262814/pexels-photo-5262814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+        }
+
+        .pipeline {
+            background: url('https://images.pexels.com/photos/2527839/pexels-photo-2527839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+        }
+
+        .robotics {
+            background: url('https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-size: cover;
+        }
+
+        @media (max-width: 400px) {
+            .services{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                row-gap: 0;
+                column-gap: 0;
+            }
+            .services-outer h3{
+                margin-top: 10vh;
+            }
+
+            .service-card{
+                width: 40vw;
+                height: 25vh;
+                margin: 5px;
+            }
+
+            .video-section h1 {
+                margin-top: 28vh;
+                font-size: 1.5rem;
+            }
+        /* Universal Mobile CSS (0-400px) */
+        button{
+                font-size: 10px;
+            }
+            h1{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    </style>
+
+    <!-- industrial solutions CSS -->
+    <style>
+        .drone-image-industrial {
+            margin-top: 15vh;
+
+        }
+
+        .industrial {
+            background-image: url('https://img.freepik.com/premium-vector/abstract-white-grey-background_528453-7.jpg?w=740');
+            background-size: cover;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .industrial-solutions {
+            display: flex;
+        }
+
+        .industrial-card {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            width: 15rem;
+            height: 40rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .industrial-inner {
+            display: flex;
+            margin: 2vw 0;
+            width: 150px;
+            height: 150px;
+            border: 2px solid gray;
+            border-radius: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .industrial-inner:hover {
+            border: 2px solid yellowgreen;
+        }
+
+        .ind-item i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .industrial-mobile{
+            display: none;
+        }
+
+        @media (max-width: 400px) {
+            .industrial{
+                display: none;
+            }
+            .industrial-mobile{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 10vw;
+            }
+            .solution-card-mobile{
+                background-color: yellow;
+                width: 95vw;
+                height: 3vh;
+                margin: 5px;
+            }
+            .solution-card-mobile:nth-child(even){
+                background-color: rgb(11, 190, 206);
+            }
+        }
+
+    </style>
+
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            padding: 40px 0 0 10px;
+            background-color: black;
+            color: white;
+            border-bottom: 5px solid yellow;
+        }
+        #brand-mobile img{
+            display: none;
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .address {
+            font-weight: lighter;
+            color: rgb(152, 152, 152);
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgb(152, 152, 152);
+        }
+
+        .footer-links a:hover {
+            color: rgb(228, 228, 228);
+            border-bottom: 2px solid yellow;
+        }
+
+        .footer-card {
+            display: flex;
+            margin-left: 2%;
+            flex-direction: column;
+            width: 25%;
+        }
+        .sponserimg {
+            height: 50px;
+            width: 100px;
+            margin: 20px 0;
+        }
+        .sponserimg:nth-child(1) {
+            margin-left: 50px;
+        }
+
+            /* Universal Mobile CSS (0-400px) */
+            * {
+                font-size: 15px;
+            }
+
+            .navbar{
+                width: 100vw;
+            }
+
+        /* Media Queries (0-400px: Mobile) Footer */
+        @media(max-width: 400px) {
+            .footer-industries, .footer-address {
+                display: none;
+            }
+            .footer-card{
+                margin: 0 30px;
+                text-align: left;      
+            }
+            #brand-mobile > img{
+                display: block;
+                background-color: white;
+                width: 15vw;
+            }
+            .footer-card{
+                text-align: left;
+                width: 50vw;
+                padding: 0;
+            }
+            .footer-links{
+                padding: 0;
+            }
+            .footer-services{
+                margin: 0;
+                padding: 0 0 0 5px;
+            }
+            .sponserimg{
+                margin: 2px;
+            }
+            .sponserimg:nth-child(1){
+                margin: 2px;
+            }
+
+
+            
+
+
+
+
+
+
+        }
+    </style>
+
+    <title>Home - Predulive Labs</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="brand" src="https://www.predulivelabs.in/Images/LOGO.png" alt="" width="50" height="50"
+                    height="24" class="d-inline-block align-text-top">
+                <strong> PREDULIVE LABS </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-items">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">INDUSTRIAL SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/trainings">DRONE TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/repair">DRONE REPAIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/research">RESEARCH & DEV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers">CAREERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="/mission">MISSION</a></li>
+                            <li><a class="dropdown-item" href="/contact">CONTACT US</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video-Section -->
+    <section class="video-section">
+        <video id="main-video" autoplay loop muted
+            poster="https://dronecoria.org/wp-content/uploads/2018/04/drone-landscape.jpg">
+            <source
+                src="https://www.predulivelabs.in/videos/Home_Page.mp4"
+                type="video/mp4">
+        </video>
+        <h1>SERVICES ON THE GO</h1>
+        <p>GET YOUR DESIRED SERVICES IN JUST A COUPLE OF CLICKS</p>
+        <button onclick="window.location.href='/contact'" class="button-round"> Contact Us </button>
+    </section>
+
+    <!-- Servies Section -->
+    <section class="services-outer">
+        <h3> OUR SERVICES</h3>
+        <div class="services ">
+            <div class="service-card agri">
+                <p>INDUSTRIAL SERVICES</p>
+                <button onclick="window.location.href='/services'" class="button-round">Know More</button>
+            </div>
+
+            <div class="service-card rail">
+                <p>DRONE REPAIR SERVICES</p>
+                <button onclick="window.location.href='/repair'" class="button-round">Know More</button>
+            </div>
+
+            <div class="service-card pipeline">
+                <p>DRONE TRAININGS</p>
+                <button onclick="window.location.href='/trainings'" class="button-round">Know More</button>
+            </div>
+
+            <div class="service-card robotics">
+                <p>CONSULTATION SERVICES</p>
+                <button onclick="window.location.href='/contact'" class="button-round">Know More</button>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Industry Solutions -->
+    <section class="industrial">
+        <h3>WE PROVIDE SOLUTIONS FOR VARIOUS INDUSTRIES</h3>
+        <div class="industrial-solutions">
+            <div class="left-outer-industrial-card industrial-card">
+                <!-- left card -->
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <!-- <i class="fa-solid fa-camera fa-1x"></i> -->
+                        <i class="fa fa-train" style="font-size:60px;color:rgb(154, 200, 60);"></i>
+                        <p>RALWAYS</p>
+                    </div>
+                </div>
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <i class="fa fa-search" style="font-size:60px;color:rgb(154, 200, 60);"></i>
+                        <p>INSPECTION</p>
+                    </div>
+                </div>
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <i class="fa fa-mobile" style="font-size:60px;color:rgb(154, 200, 60);"></i>
+                        <p>TELECOM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industrial Section Drone Image -->
+            <div class="drone-image-industrial">
+                <img src="https://snipstock.com/assets/cdn/png/a502984dce03209ffa65ed95e7030416.png" height="400vw"
+                    alt="drone-image" srcset="">
+            </div>
+            <!-- right card-->
+            <div class="right-outer-industrial-card industrial-card">
+                <!-- right card items-->
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <i class="fa fa-tree" style="font-size:60px;color:rgb(130, 200, 60);"></i>
+                        <p>FOREST</p>
+                    </div>
+                </div>
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <i class="fa fa-building" style="font-size:60px;color:rgb(154, 200, 60);"></i>
+                        <p>CONSTRUCTION</p>
+                    </div>
+                </div>
+                <div class="left-industrial-inner industrial-inner">
+                    <div class="ind-item">
+                        <i class="fa fa-video-camera" style="font-size:60px;color:rgb(154, 200, 60);"></i>
+                        <p>FILMING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="industrial-mobile">
+        <h4>WE PROVIDE SOLUTIONS FOR VARIOUS INDUSTRIES</h4>
+        <div class="industial-solutions-mobile">
+            <div class="solution-card-mobile"> <p class="solution-card-text"> RAILWAYS </p> </div>
+            <div class="solution-card-mobile"> <p class="solution-card-text">INSPECTION</p> </div>
+            <div class="solution-card-mobile"> <p class="solution-card-text">TELECOM</p> </div>
+            <div class="solution-card-mobile"> <p class="solution-card-text">DEFENSE</p> </div>
+            <div class="solution-card-mobile"> <p class="solution-card-text">FILMING</p> </div>
+            <div class="solution-card-mobile"> <p class="solution-card-text">ANY MANY MORE</p> </div>
+        </div>
+        <button class="btn btn-warning" > Get in touch </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <!-- Footer Address Section -->
+            <div class="footer-address footer-card">
+                <iframe id="main-office-gmap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4469710883022!2d81.06472961452015!3d26.889306267571744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3cebefbb1f5%3A0xb8d92d5145d3bc9f!2sPredulive%20Labs!5e0!3m2!1sen!2sin!4v1662614935890!5m2!1sen!2sin"
+                    width="200" height="125" style="border:0; margin-left: 30px;"></iframe>"
+                <ul class="footer-links">
+                    <strong>
+                        <h6> Predulive Labs Pvt. Ltd. </h6>
+                    </strong>
+                    <li class="address"> PLOT NO. 3B, KAPEESH VIHAR COLONY </li>
+                    <li class="address"> UATTARDHONA, LUCKNOW </li>
+                    <li class="address"> UTTAR PRADESH </li>
+                    <li class="address"> 226010 </li>
+                </ul>
+            </div>
+            <!-- Drone Industries -->
+            <div class="footer-industries footer-card">
+                <h6>INDUSTRIES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> GEOGRAPHIC INFORMATION SYSTEM </a></li>
+                    <li> <a href="#"> RAILWAYS </a></li>
+                    <li> <a href="#"> TELECOM </a></li>
+                    <li> <a href="#"> AGRICULTURE </a></li>
+                    <li> <a href="#"> FORESTRY AND WILDLIFE </a></li>
+                    <li> <a href="#"> CONSTRUCTION </a></li>
+                    <li> <a href="#"> VIRTUAL REALITY </a></li>
+                    <li> <a href="#"> FILMING </a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="footer-services footer-card">
+                <h6> SERVICES </h6>
+                <ul class="footer-links">
+                    <li> <a href="#"> DRONES & ROBOTICS </a></li>
+                    <li> <a href="#"> INSPECTION AND MONITORING OF PIPELINES </a></li>
+                    <li> <a href="#"> ROAD INSPECTION </a></li>
+                    <li> <a href="#"> DISASTER MANAGEMENT </a></li>
+                    <li> <a href="#"> AGRICULTURE SERVICES </a></li>
+                    <li> <a href="#"> RAILWAY SERVICES </a></li>
+                </ul>
+            </div>
+            <!-- compnay -->
+            <div class="footer-company footer-card">
+                <div id="brand-mobile">
+                    <img src="https://www.predulivelabs.in/Images/LOGO.png" alt="" srcset="">
+                    <br>
+                </div>
+                <ul class="footer-links">
+                    <li> <a href="#"> ABOUT US </a></li>
+                    <li> <a href="#"> OUR MISSION </a></li>
+                    <li> <a href="#"> RESERACH AND DEVELOPENT </a></li>
+                    <li> <a href="#"> BLOG </a></li>
+                    <li> <a href="/offices"> OUR OFFICES </a></li>
+                    <li> <a href="#"> CONTACT US </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sponsers">
+            <img class="sponserimg"
+                src="https://content.techgig.com/thumb/msid-83299085,width-460,resizemode-4/STPI-to-launch-12-centres-of-excellence-soon.jpg?163146"
+                alt="" srcset="">
+            <img class="sponserimg"
+                src="https://prospectdigital.co.in/wp-content/uploads/2020/04/STARTUP-INDIA-LOGO-768x576.png" alt=""
+                srcset="">
+            <img class="sponserimg" src="https://i.ndtvimg.com/mt/2014-09/Make-In-IndiaLogo650.jpg" alt="" srcset="">
+        </div>
+
+        <h6>&copy; 2020 Predulive Labs Pvt. Ltd.</h6>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/33b5c147dc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
